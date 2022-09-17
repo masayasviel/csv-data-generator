@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
-import {
-  enableInputFormNameMap,
-  EnableInputFormType,
-} from '@common/constant-value';
+import { enableInputFormNameMap, EnableInputFormType } from '../constant-value';
 
 @Component({
   selector: 'app-column-type-form',

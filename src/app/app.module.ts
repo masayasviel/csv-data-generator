@@ -4,15 +4,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { ColumnFormComponent } from '@common/column-form/column-form.component';
-import { ColumnTypeFormComponent } from '@common/column-type-form/column-type-form.component';
-import { DateFormComponent } from '@common/date-form/date-form.component';
-import { TimeFormComponent } from '@common/time-form/time-form.component';
-
 import { PrimengModule } from './primeng.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DatetimeFormComponent } from './common/datetime-form/datetime-form.component';
+import { ColumnFormComponent } from './forms/column-form/column-form.component';
+import { ColumnTypeFormComponent } from './forms/column-type-form/column-type-form.component';
+import { DateFormComponent } from './forms/date-form/date-form.component';
+import { TimeFormComponent } from './forms/time-form/time-form.component';
+import { DatetimeFormComponent } from './forms/datetime-form/datetime-form.component';
 
 @NgModule({
   declarations: [

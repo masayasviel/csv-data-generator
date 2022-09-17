@@ -27,7 +27,7 @@ export const enableInputFormNameMap: {
   { label: 'UUID', value: 'uuid' },
   { label: '日付', value: 'date' },
   { label: '時間', value: 'time' },
-  { label: '日時', value: 'datetime' }, // 範囲指定
+  { label: '日時', value: 'datetime' },
   { label: '固定値', value: 'fix' }, // 1つ
   { label: '無作為選択', value: 'randomSelect' }, // 複数入力
   { label: '文字列', value: 'randomCharacter' }, // 文字数範囲選択、大文字小文字数字
