@@ -1,0 +1,2 @@
+# jap-name-generator
+ヘイトスピーチ！！！！！
