@@ -3,17 +3,17 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-date-form',
-  templateUrl: './date-form.component.html',
-  styleUrls: ['./date-form.component.scss'],
+  selector: 'app-datetime-form',
+  templateUrl: './datetime-form.component.html',
+  styleUrls: ['./datetime-form.component.scss'],
 })
-export class DateFormComponent implements OnInit, OnDestroy {
+export class DatetimeFormComponent implements OnInit, OnDestroy {
   subscription = new Subscription();
-  fromDataForm = new FormControl<Date | null>(null);
-  toDataForm = new FormControl<Date | null>(null);
+  fromDataTimeForm = new FormControl<Date | null>(null);
+  toDataTimeForm = new FormControl<Date | null>(null);
   formGroup = new FormGroup({
-    from: this.fromDataForm,
-    to: this.toDataForm,
+    from: this.fromDataTimeForm,
+    to: this.toDataTimeForm,
   });
 
   constructor() {}

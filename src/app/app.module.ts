@@ -12,6 +12,7 @@ import { TimeFormComponent } from '@common/time-form/time-form.component';
 import { PrimengModule } from './primeng.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DatetimeFormComponent } from './common/datetime-form/datetime-form.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AppComponent } from './app.component';
     ColumnTypeFormComponent,
     DateFormComponent,
     TimeFormComponent,
+    DatetimeFormComponent,
   ],
   imports: [
     BrowserModule,

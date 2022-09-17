@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-time-form',
   templateUrl: './time-form.component.html',
   styleUrls: ['./time-form.component.scss'],
 })
-export class TimeFormComponent implements OnInit {
+export class TimeFormComponent implements OnInit, OnDestroy {
+  subscription = new Subscription();
   fromTimeForm = new FormControl<Date | null>(null);
   toTimeForm = new FormControl<Date | null>(null);
   formGroup = new FormGroup({
@@ -17,8 +19,14 @@ export class TimeFormComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.formGroup.valueChanges.subscribe((elm) => {
-      console.log(elm);
-    });
+    this.subscription.add(
+      this.formGroup.valueChanges.subscribe((elm) => {
+        console.log(elm);
+      })
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 }

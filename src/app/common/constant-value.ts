@@ -26,7 +26,7 @@ export const enableInputFormNameMap: {
   { label: 'フルネーム', value: 'fullName' },
   { label: 'UUID', value: 'uuid' },
   { label: '日付', value: 'date' },
-  { label: '時間', value: 'time' }, // 範囲指定
+  { label: '時間', value: 'time' },
   { label: '日時', value: 'datetime' }, // 範囲指定
   { label: '固定値', value: 'fix' }, // 1つ
   { label: '無作為選択', value: 'randomSelect' }, // 複数入力
