@@ -1,0 +1,23 @@
+<div fxLayout="column" fxLayoutAlign="space-around center">
+  <button
+    pButton
+    pRipple
+    type="button"
+    label="add"
+    class="p-button-raised"
+    (click)="addNewForm()"
+  ></button>
+  <ng-container *ngFor="let f of choiceListControls; index as i">
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <input type="text" pInputText [formControl]="f" />
+      <button
+        pButton
+        pRipple
+        type="button"
+        label="delete"
+        class="p-button-raised p-button-danger"
+        (click)="removeForm(i)"
+      ></button>
+    </div>
+  </ng-container>
+</div>

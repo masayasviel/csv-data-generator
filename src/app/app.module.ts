@@ -12,6 +12,8 @@ import { ColumnTypeFormComponent } from './forms/column-type-form/column-type-fo
 import { DateFormComponent } from './forms/date-form/date-form.component';
 import { TimeFormComponent } from './forms/time-form/time-form.component';
 import { DatetimeFormComponent } from './forms/datetime-form/datetime-form.component';
+import { FixFormComponent } from './forms/fix-form/fix-form.component';
+import { ChoiceFormsComponent } from './forms/choice-forms/choice-forms.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { DatetimeFormComponent } from './forms/datetime-form/datetime-form.compo
     DateFormComponent,
     TimeFormComponent,
     DatetimeFormComponent,
+    FixFormComponent,
+    ChoiceFormsComponent,
   ],
   imports: [
     BrowserModule,
