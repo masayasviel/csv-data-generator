@@ -10,7 +10,7 @@ const enableInputFormValue = [
   'fix',
   'randomSelect',
   'randomCharacter',
-  'randomInteger',
+  'empty',
   'nonSelect',
 ] as const;
 
@@ -31,8 +31,8 @@ export const enableInputFormNameMap: {
   { label: '日時', value: 'datetime' },
   { label: '固定値', value: 'fix' },
   { label: '無作為選択', value: 'randomSelect' },
-  { label: '文字列', value: 'randomCharacter' }, // 文字数範囲選択、大文字, 小文字, 数字, _, -
-  { label: '数値', value: 'randomInteger' }, // 数字のレンジ指定
+  { label: '文字列', value: 'randomCharacter' },
+  { label: '空文字', value: 'empty' },
   { label: '未選択', value: 'nonSelect' },
 ];
 

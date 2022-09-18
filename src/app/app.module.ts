@@ -14,6 +14,7 @@ import { TimeFormComponent } from './forms/time-form/time-form.component';
 import { DatetimeFormComponent } from './forms/datetime-form/datetime-form.component';
 import { FixFormComponent } from './forms/fix-form/fix-form.component';
 import { ChoiceFormsComponent } from './forms/choice-forms/choice-forms.component';
+import { RandomCharacterFormComponent } from './forms/random-character-form/random-character-form.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ChoiceFormsComponent } from './forms/choice-forms/choice-forms.componen
     DatetimeFormComponent,
     FixFormComponent,
     ChoiceFormsComponent,
+    RandomCharacterFormComponent,
   ],
   imports: [
     BrowserModule,
