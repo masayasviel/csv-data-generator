@@ -7,23 +7,17 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { PrimengModule } from './primeng.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ColumnFormComponent } from './forms/column-form/column-form.component';
-import { ColumnTypeFormComponent } from './forms/column-type-form/column-type-form.component';
-import { DateFormComponent } from './forms/date-form/date-form.component';
-import { TimeFormComponent } from './forms/time-form/time-form.component';
-import { DatetimeFormComponent } from './forms/datetime-form/datetime-form.component';
-import { FixFormComponent } from './forms/fix-form/fix-form.component';
-import { ChoiceFormsComponent } from './forms/choice-forms/choice-forms.component';
-import { RandomCharacterFormComponent } from './forms/random-character-form/random-character-form.component';
+import { ColumnFormComponent } from './forms/molecules/column-form/column-form.component';
+import { ColumnTypeFormComponent } from './forms/atoms/column-type-form/column-type-form.component';
+import { FixFormComponent } from './forms/atoms/fix-form/fix-form.component';
+import { ChoiceFormsComponent } from './forms/atoms/choice-forms/choice-forms.component';
+import { RandomCharacterFormComponent } from './forms/atoms/random-character-form/random-character-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ColumnFormComponent,
     ColumnTypeFormComponent,
-    DateFormComponent,
-    TimeFormComponent,
-    DatetimeFormComponent,
     FixFormComponent,
     ChoiceFormsComponent,
     RandomCharacterFormComponent,
