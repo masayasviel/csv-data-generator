@@ -1,8 +1,9 @@
 <router-outlet></router-outlet>
 
-<app-column-type-form></app-column-type-form>
-<app-choice-forms></app-choice-forms>
-<app-random-character-form></app-random-character-form>
-<app-fix-form></app-fix-form>
-
-<p-toast position="bottom-center" key="bc"></p-toast>
+<p-orderList>
+  <ng-template pTemplate="item">
+    <app-column-form></app-column-form>
+    <app-column-form></app-column-form>
+    <app-column-form></app-column-form>
+  </ng-template>
+</p-orderList>

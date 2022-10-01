@@ -1,1 +1,31 @@
-<div></div>
+<div fxLayout="row" fxLayoutAlign="space-around center" class="p-fluid">
+  <!-- 属性 -->
+  <app-column-type-form [formControl]="columnTypeForm"></app-column-type-form>
+  <!-- ヘッダー -->
+  <div class="field col-12 md:col-4">
+    <span class="p-float-label">
+      <label for="header-input">ヘッダー</label>
+      <input
+        id="header-input"
+        type="text"
+        pInputText
+        [formControl]="headerValueForm"
+      />
+    </span>
+  </div>
+  <!-- オプション -->
+  <div [ngSwitch]="columnType">
+    <app-choice-forms
+      *ngSwitchCase="'randomSelect'"
+      [formControl]="optionForm"
+    ></app-choice-forms>
+    <app-fix-form
+      *ngSwitchCase="'fix'"
+      [formControl]="optionForm"
+    ></app-fix-form>
+    <app-random-character-form
+      *ngSwitchCase="'randomCharacter'"
+      [formControl]="optionForm"
+    ></app-random-character-form>
+  </div>
+</div>
