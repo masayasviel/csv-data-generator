@@ -1,9 +1,6 @@
-import { Component, forwardRef, OnDestroy, OnInit } from '@angular/core';
-import {
-  ControlValueAccessor,
-  FormControl,
-  NG_VALUE_ACCESSOR,
-} from '@angular/forms';
+import { Component, OnDestroy, OnInit, forwardRef } from '@angular/core';
+import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
+
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -18,9 +15,7 @@ import { Subscription } from 'rxjs';
     },
   ],
 })
-export class FixFormComponent
-  implements OnInit, OnDestroy, ControlValueAccessor
-{
+export class FixFormComponent implements OnInit, OnDestroy, ControlValueAccessor {
   subscription = new Subscription();
   fixValueForm = new FormControl<string>('');
 

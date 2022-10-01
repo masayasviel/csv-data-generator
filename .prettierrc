@@ -1,8 +1,19 @@
 {
-  "printWidth": 80,
+  "printWidth": 100,
   "singleQuote": true,
   "useTabs": false,
   "tabWidth": 2,
   "semi": true,
-  "bracketSpacing": true
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "importOrder": [
+    "^@angular/(.*)$",
+    "^primeng/(.*)$",
+    "<THIRD_PARTY_MODULES>",
+    "^@global/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderParserPlugins": ["typescript", "decorators-legacy"],
+  "importOrderSortSpecifiers": true
 }

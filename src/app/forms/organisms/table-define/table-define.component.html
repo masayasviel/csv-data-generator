@@ -1,0 +1,24 @@
+<div>
+  <ng-container *ngFor="let form of formsInFormList; index as idx">
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <i class="pi pi-sort"></i>
+      <app-column-form [formControl]="form"></app-column-form>
+      <button
+        pButton
+        pRipple
+        type="button"
+        label="削除"
+        class="p-button-raised p-button-danger"
+        (click)="onClickDeleteForm(idx)"
+      ></button>
+    </div>
+  </ng-container>
+  <button
+    pButton
+    pRipple
+    type="button"
+    label="追加"
+    class="p-button-raised"
+    (click)="onClickAddForm()"
+  ></button>
+</div>

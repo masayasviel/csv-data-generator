@@ -1,28 +1,8 @@
 <div fxLayout="row" fxLayoutAlign="space-between center">
   <p-inputNumber mode="decimal" [formControl]="characterLength"></p-inputNumber>
-  <p-checkbox
-    value="upper"
-    label="アルファベット(大文字)"
-    [formControl]="optionForm"
-  ></p-checkbox>
-  <p-checkbox
-    value="lower"
-    label="アルファベット(小文字)"
-    [formControl]="optionForm"
-  ></p-checkbox>
-  <p-checkbox
-    value="number"
-    label="数字"
-    [formControl]="optionForm"
-  ></p-checkbox>
-  <p-checkbox
-    value="underBar"
-    label="アンダーバー"
-    [formControl]="optionForm"
-  ></p-checkbox>
-  <p-checkbox
-    value="hyphen"
-    label="ハイフン"
-    [formControl]="optionForm"
-  ></p-checkbox>
+  <p-checkbox value="upper" label="アルファベット(大文字)" [formControl]="optionForm"></p-checkbox>
+  <p-checkbox value="lower" label="アルファベット(小文字)" [formControl]="optionForm"></p-checkbox>
+  <p-checkbox value="number" label="数字" [formControl]="optionForm"></p-checkbox>
+  <p-checkbox value="underBar" label="アンダーバー" [formControl]="optionForm"></p-checkbox>
+  <p-checkbox value="hyphen" label="ハイフン" [formControl]="optionForm"></p-checkbox>
 </div>

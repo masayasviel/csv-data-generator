@@ -1,15 +1,9 @@
-import { Component, forwardRef, OnDestroy, OnInit } from '@angular/core';
-import {
-  ControlValueAccessor,
-  FormControl,
-  NG_VALUE_ACCESSOR,
-} from '@angular/forms';
+import { Component, OnDestroy, OnInit, forwardRef } from '@angular/core';
+import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
 
-import {
-  enableInputFormNameMap,
-  EnableInputFormType,
-} from '../../../global/constant-value';
 import { Subscription } from 'rxjs';
+
+import { EnableInputFormType, enableInputFormNameMap } from '@global/constant-value';
 
 @Component({
   selector: 'app-column-type-form',
@@ -23,9 +17,7 @@ import { Subscription } from 'rxjs';
     },
   ],
 })
-export class ColumnTypeFormComponent
-  implements OnInit, OnDestroy, ControlValueAccessor
-{
+export class ColumnTypeFormComponent implements OnInit, OnDestroy, ControlValueAccessor {
   subscription = new Subscription();
   /** 入力フォームの種類 */
   enableInputForm = enableInputFormNameMap;
