@@ -35,7 +35,8 @@ export class ChoiceFormsComponent
     this.subscription.unsubscribe();
   }
 
-  writeValue(params: string[]): void {
+  writeValue(params?: string[] | null): void {
+    if (params == null) return;
     this.choiceForms.clear();
     params.forEach((param, idx) => {
       if (idx < maxChoiceValueCount) {

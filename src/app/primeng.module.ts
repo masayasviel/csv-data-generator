@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 
 import { ButtonModule } from 'primeng/button';
-import { CalendarModule } from 'primeng/calendar';
 import { CheckboxModule } from 'primeng/checkbox';
 import { DropdownModule } from 'primeng/dropdown';
 import { InputNumberModule } from 'primeng/inputnumber';
@@ -12,7 +11,6 @@ import { ToastModule } from 'primeng/toast';
 
 const prime = [
   ButtonModule,
-  CalendarModule,
   CheckboxModule,
   DropdownModule,
   InputNumberModule,

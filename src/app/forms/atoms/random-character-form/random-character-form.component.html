@@ -1,4 +1,10 @@
 <div fxLayout="column" fxLayoutAlign="space-between center">
+  <p-inputNumber
+    mode="decimal"
+    [minFractionDigits]="2"
+    [maxFractionDigits]="5"
+    [formControl]="characterLength"
+  ></p-inputNumber>
   <p-checkbox
     value="upper"
     label="アルファベット(大文字)"

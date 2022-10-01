@@ -2,9 +2,11 @@ import { Component, forwardRef, OnDestroy, OnInit } from '@angular/core';
 import {
   ControlValueAccessor,
   FormControl,
+  FormGroup,
   NG_VALUE_ACCESSOR,
 } from '@angular/forms';
 import { Subscription } from 'rxjs';
+import { RandomCharacterFormInterface } from '../../interfaces/form.interface';
 
 @Component({
   selector: 'app-random-character-form',
@@ -22,7 +24,12 @@ export class RandomCharacterFormComponent
   implements OnInit, OnDestroy, ControlValueAccessor
 {
   subscription = new Subscription();
+  characterLength = new FormControl<number>(1);
   optionForm = new FormControl<string[]>([]);
+  formGroup = new FormGroup({
+    characterLength: this.characterLength,
+    optionForm: this.optionForm,
+  });
 
   constructor() {}
 
@@ -32,12 +39,14 @@ export class RandomCharacterFormComponent
     this.subscription.unsubscribe();
   }
 
-  writeValue(param: string[]): void {
-    this.optionForm.setValue(param);
+  writeValue(params?: RandomCharacterFormInterface | null): void {
+    if (params == null) return;
+    this.optionForm.setValue(params.options);
+    this.characterLength.setValue(params.characterLength);
   }
 
   registerOnChange(fn: any): void {
-    this.subscription.add(this.optionForm.valueChanges.subscribe(fn));
+    this.subscription.add(this.formGroup.valueChanges.subscribe(fn));
   }
 
   registerOnTouched(fn: any): void {}

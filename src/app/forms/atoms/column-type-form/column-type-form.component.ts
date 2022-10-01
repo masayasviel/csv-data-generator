@@ -39,7 +39,8 @@ export class ColumnTypeFormComponent
     this.subscription.unsubscribe();
   }
 
-  writeValue(param: EnableInputFormType): void {
+  writeValue(param?: EnableInputFormType | null): void {
+    if (param == null) return;
     this.selectedInputType.setValue(param);
   }
 

@@ -32,7 +32,8 @@ export class FixFormComponent
     this.subscription.unsubscribe();
   }
 
-  writeValue(param: string): void {
+  writeValue(param?: string | null): void {
+    if (param == null) return;
     this.fixValueForm.setValue(param);
   }
 
