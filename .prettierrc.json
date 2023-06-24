@@ -7,10 +7,14 @@
   "bracketSpacing": true,
   "bracketSameLine": false,
   "importOrder": [
+    "^react$",
     "^react/(.*)$",
     "^react-(.*)$",
     "^@mantine/(.*)$",
     "<THIRD_PARTY_MODULES>",
+    "^@temps/(.*)$",
+    "^@organisms/(.*)$",
+    "^@modules/(.*)$",
     "^[./]"
   ],
   "importOrderSeparation": true,
