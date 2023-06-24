@@ -11,6 +11,7 @@
     "^react/(.*)$",
     "^react-(.*)$",
     "^@mantine/(.*)$",
+    "^@tabler/(.*)$",
     "<THIRD_PARTY_MODULES>",
     "^[./]"
   ],
