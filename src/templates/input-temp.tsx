@@ -1,6 +1,6 @@
-import { Paper, Title } from '@mantine/core';
-
 import React from 'react';
+
+import { Paper, Title } from '@mantine/core';
 
 interface PropType {
   title: string;
