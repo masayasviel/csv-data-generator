@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Button, Flex, Navbar, ScrollArea, Title } from '@mantine/core';
 
+import { FormItem } from '../modules/form-item';
+
 export const SideNavApp: React.FC = () => {
   return (
     <Navbar p="md" width={{ base: 400 }}>
@@ -10,7 +12,7 @@ export const SideNavApp: React.FC = () => {
       </Navbar.Section>
 
       <Navbar.Section grow component={ScrollArea} mx="-xs" px="xs">
-        {/* scrollable content here */}
+        <FormItem keyName="キー名" typeName="タイプ" />
       </Navbar.Section>
 
       <Navbar.Section>
