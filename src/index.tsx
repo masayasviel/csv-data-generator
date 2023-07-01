@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ReactDOM from 'react-dom/client';
+import { Provider } from 'react-redux';
 
 import { MantineProvider } from '@mantine/core';
 import { Notifications } from '@mantine/notifications';
@@ -8,14 +9,17 @@ import { Notifications } from '@mantine/notifications';
 import App from './App';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { store } from './store';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <MantineProvider>
-      <Notifications />
-      <App />
-    </MantineProvider>
+    <Provider store={store}>
+      <MantineProvider>
+        <Notifications />
+        <App />
+      </MantineProvider>
+    </Provider>
   </React.StrictMode>
 );
 
