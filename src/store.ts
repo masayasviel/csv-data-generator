@@ -1,7 +1,11 @@
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 
+import { InputType } from './interfaces/input-types.interface';
+
 export interface RootStateType {
-  state: {};
+  state: {
+    [key: string]: InputType;
+  };
 }
 
 const InitialState: RootStateType['state'] = {};
